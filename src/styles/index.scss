@@ -7,9 +7,22 @@
   padding: 0;
 }
 
+/* General Body */
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $color-bg;
+}
+
+
+/* Page Sections */
+.section {
+  margin: 0rem 4rem 6rem;
+
+  &__head {
+    color: $color-text;
+    font-weight: $font-bold;
+    margin-bottom: 1rem;
+  }
 }

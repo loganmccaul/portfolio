@@ -1,24 +1,28 @@
 <template>
   <div class="projects">
-    <section class="section">
-      <h2 class="section__head">Work</h2>
-      <Card />
-    </section>
-    <section class="section">
-      <h2 class="section__head">Fun</h2>
+    <section class="section" :key="section.id" v-for="section in projects">
+      <h2 class="section__head">{{section.name}}</h2>
+      <Card v-for="project in section.projects" :key="project.id" :project="project" />
     </section>
   </div>
 </template>
 
 <script>
-import Card from '@/components/Card/Card.vue';
+// List of all projects
+import projects from '@/projects';
 
-import './Projects.scss';
+// Components
+import Card from '@/components/Card/Card.vue';
 
 export default {
   name: 'Projects',
   components: {
     Card,
   },
+  data: () => (
+    {
+      projects,
+    }
+  ),
 };
 </script>
