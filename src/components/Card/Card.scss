@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.card {
+  background: $color-card;
+  height: 16rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .7);
+  display: flex;
+  flex-wrap: wrap;
+  color: $color-text;
+  min-width: 16rem;
+
+  /* Handle spacing between cards except for the first card */
+  margin-top: 2rem;
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &__description {
+    min-width: 16rem;
+    flex: 1;
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: $font-bold;
+    margin-bottom: 1rem;
+  }
+
+  &__category-name {
+    font-weight: $font-light;
+  }
+
+  &__text {
+    font-size: .875rem;
+    font-weight: $font-regular;
+  }
+
+  &__link {
+    margin-right: 1rem;
+    font-weight: $font-regular;
+    color: $color-action;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    max-height: 16rem;
+    min-width: 16rem;
+    flex: 3;
+  }
+}

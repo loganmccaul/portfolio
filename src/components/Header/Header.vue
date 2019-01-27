@@ -18,9 +18,9 @@
 </template>
 
 <script>
-  import './Header.scss';
+import './Header.scss';
 
-  export default {
-    name: 'Header',
-  };
+export default {
+  name: 'Header',
+};
 </script>

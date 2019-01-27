@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.section {
+  margin: 0rem 4rem 6rem;
+  
+  &__head {
+    color: $color-text;
+    font-weight: $font-bold;
+    margin-bottom: 1rem;
+  }
+}
