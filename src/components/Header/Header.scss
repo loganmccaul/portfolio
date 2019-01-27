@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 2rem 4rem 6rem;
+
+  &__title {
+    color: $color-text;
+    font-size: 2.25rem;
+    font-weight: $font-bold;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__nav-list-item {
+    margin-left: 4rem;
+  }
+
+  &__link {
+    font-size: 1.125rem;
+    font-weight: $font-light;
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--active {
+      text-decoration: underline;
+      font-weight: $font-bold;
+    }
+  }
+}
