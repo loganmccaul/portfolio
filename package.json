@@ -75,6 +75,8 @@
     "testMatch": [
       "**/*.test.js"
     ],
-    "testURL": "http://localhost/"
+    "testURL": "http://localhost/",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,vue}"]
   }
 }
