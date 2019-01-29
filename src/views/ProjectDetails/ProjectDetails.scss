@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.project-details {
+
+  &__breadcrumb {
+    color: $color-action;
+    font-size: .875rem;
+    font-weight: $font-light;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__link {
+    color: $color-action;
+    font-size: .875rem;
+    font-weight: $font-light;
+    text-decoration: none;
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__category-name {
+    font-weight: $font-light
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

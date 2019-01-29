@@ -16,16 +16,12 @@
         class="card__link"
         target="_blank"
         :href="project.liveLink"
-        v-if="project.liveLink">
-          View live
-        </a>
+        v-if="project.liveLink">View live</a>
         <a
         class="card__link"
         target="_blank"
         :href="project.codeLink"
-        v-if="project.codeLink">
-          View code
-        </a>
+        v-if="project.codeLink">View code</a>
       </div>
     </div>
     <picture class="card__image">

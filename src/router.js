@@ -8,20 +8,29 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/projects/:project',
+      name: 'ProjectDetails',
+      component: () => import(/* webpackChunkName: "projectdetails" */ './views/ProjectDetails/ProjectDetails.vue'),
+    },
+    {
+      path: '/projects',
       name: 'Projects',
-      component: () => import(/* webpackChunkName: "about" */ './views/Projects/Projects.vue'),
+      component: () => import(/* webpackChunkName: "projects" */ './views/Projects/Projects.vue'),
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      component: () => import(/* webpackChunkName: "about" */ './views/About/About.vue'),
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
+      component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue'),
+    },
+    {
+      path: '/',
+      redirect: '/projects',
     },
   ],
-  linkExactActiveClass: 'header__link--active',
+  linkActiveClass: 'header__link--active',
 });

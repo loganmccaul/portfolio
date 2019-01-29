@@ -4,7 +4,7 @@
     <nav>
       <ul class="header__nav-list">
         <li class="header__nav-list-item">
-          <router-link class="header__link" to="/">Projects</router-link>
+          <router-link class="header__link" to="/projects">Projects</router-link>
         </li>
         <li class="header__nav-list-item">
           <router-link class="header__link" to="/about">About</router-link>

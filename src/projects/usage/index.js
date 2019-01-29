@@ -10,5 +10,6 @@ export default {
   image: 'usage.png',
   cardImageTranslation: 'transform: translate(-12%, -50%)',
   liveLink: 'https://cloud.ibm.com/billing/usage',
+  codeLink: 'https://github.ibm.com/ibmcloud/billing',
   details: 'Test',
 };
