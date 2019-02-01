@@ -16,7 +16,7 @@
         class="card__link"
         target="_blank"
         :href="project.liveLink"
-        v-if="project.liveLink">View live</a>
+        v-if="project.liveLink">View live<span v-if="project.restrictedLive">*</span></a>
         <a
         class="card__link"
         target="_blank"

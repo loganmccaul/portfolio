@@ -35,18 +35,10 @@ import projects from '@/projects';
 // Styles
 import './ProjectDetails.scss';
 
-// Find project regardless of section
-const allProjects = projects.reduce(
-  (projectList, section) => [...projectList, ...section.projects], [],
-);
-
-
 export default {
   name: 'ProjectDetails',
   data() {
-    const selectedProject = allProjects.find(project => project.id === this.$route.params.project);
-
-    return { project: selectedProject };
+    return { project: projects.find(project => project.id === this.$route.params.project) };
   },
 };
 </script>

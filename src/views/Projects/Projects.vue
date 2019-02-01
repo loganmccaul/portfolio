@@ -1,8 +1,13 @@
 <template>
   <div class="projects">
-    <section class="section" :key="section.id" v-for="section in projects">
-      <h2 class="section__head">{{section.name}}</h2>
-      <Card v-for="project in section.projects" :key="project.id" :project="project" />
+    <section class="section">
+      <h2 class="section__head">Work</h2>
+      <Card v-for="project in workProjects" :key="project.id" :project="project" />
+      <p class="section__footer">* Live code exists on IBM Cloud. An IBM Cloud account is required. You can create a free account through <a href="https://cloud.ibm.com/registration">IBM Cloud Registration.</a></p>
+    </section>
+    <section class="section">
+      <h2 class="section__head">Fun</h2>
+      <Card v-for="project in funProjects" :key="project.id" :project="project" />
     </section>
   </div>
 </template>
@@ -21,7 +26,8 @@ export default {
   },
   data: () => (
     {
-      projects,
+      workProjects: projects.filter(project => project.section === 'work'),
+      funProjects: projects.filter(project => project.section === 'fun'),
     }
   ),
 };

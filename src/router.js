@@ -32,5 +32,8 @@ export default new Router({
       redirect: '/projects',
     },
   ],
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   linkActiveClass: 'header__link--active',
 });

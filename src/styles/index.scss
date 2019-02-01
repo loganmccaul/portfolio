@@ -26,4 +26,14 @@ body {
     font-weight: $font-bold;
     margin-bottom: 1rem;
   }
+
+  &__footer {
+    color: $color-text;
+    font-size: .875rem;
+    margin-top: 1rem;
+
+    & > a {
+      color: $color-action;
+    }
+  }
 }

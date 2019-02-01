@@ -32,7 +32,7 @@ Today is your day.
 You're off to Great Places!
 You're off and away!"
       />
-      <button class="contact__button">Send</button>
+      <button form="contact" class="contact__button">Send</button>
     </form>
   </div>
 </template>
